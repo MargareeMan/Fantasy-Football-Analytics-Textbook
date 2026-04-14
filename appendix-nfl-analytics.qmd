@@ -1,0 +1,3 @@
+# NFL Analytics Notes {#sec-appendixNFLAnalytics .unnumbered}
+
+This appendix contains supplementary notes on NFL analytics concepts and data sources.

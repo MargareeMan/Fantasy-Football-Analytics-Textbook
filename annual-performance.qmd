@@ -1,0 +1,51 @@
+# Annual Performance by Stat Category {#sec-annualPerformance}
+
+This chapter covers annual player performance across key statistical categories.
+
+## Passing {#sec-annualPassing}
+
+### Pass Attempts {#sec-annualPassAttempts}
+
+#### Completed Pass {#sec-annualCompletedPass}
+
+#### Incomplete Pass {#sec-annualIncompletePass}
+
+#### Interceptions {#sec-annualInterceptions}
+
+#### Pass TDs {#sec-annualPassTDs}
+
+### Pass Yardage {#sec-annualPassYardage}
+
+#### Air Yards {#sec-annualAirYards}
+
+#### Passing Yards {#sec-annualPassingYards}
+
+#### YAC {#sec-annualYAC}
+
+### Passing Metrics {#sec-annualPassingMetrics}
+
+#### CP {#sec-annualCP}
+
+#### CPOE {#sec-annualCPOE}
+
+### Passer Play {#sec-annualPasserPlay}
+
+#### Dropback {#sec-annualDropback}
+
+#### Hits {#sec-annualHits}
+
+#### Sacks {#sec-annualSacks}
+
+#### Pass_oe {#sec-annualPassOE}
+
+#### xpass {#sec-annualXpass}
+
+## Rushing {#sec-annualRushing}
+
+## Receiving {#sec-annualReceiving}
+
+## Kicking {#sec-annualKicking}
+
+## Offensive Line Play {#sec-annualOLine}
+
+## Defensive Play {#sec-annualDefense}

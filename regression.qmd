@@ -1,0 +1,3 @@
+# Regression {#sec-regression}
+
+This chapter introduces simple linear regression in the context of NFL analytics.

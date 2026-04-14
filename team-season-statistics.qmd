@@ -1,0 +1,3 @@
+# Team Regular Season Statistics {#sec-teamSeasonStatistics}
+
+This chapter covers team-level regular season statistics.

@@ -1,0 +1,3 @@
+# Generalized Linear Mixed Models {#sec-glmm}
+
+This chapter covers generalized linear mixed models (GLMMs) applied to NFL data.

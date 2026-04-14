@@ -1,0 +1,3 @@
+# R Notes {#sec-appendixRNotes .unnumbered}
+
+This appendix provides supplementary notes on R programming relevant to the book.

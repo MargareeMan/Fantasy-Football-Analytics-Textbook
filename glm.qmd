@@ -1,0 +1,3 @@
+# Generalized Linear Models {#sec-glm}
+
+This chapter covers generalized linear models (GLMs) applied to NFL data.

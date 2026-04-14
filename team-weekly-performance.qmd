@@ -1,0 +1,3 @@
+# Team Weekly Performance {#sec-teamWeeklyPerformance}
+
+This chapter covers team-level weekly performance statistics.

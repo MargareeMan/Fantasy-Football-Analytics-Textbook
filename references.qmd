@@ -1,4 +1,4 @@
-# References {#sec-refs .unnumbered .unlisted}
+# References {#sec-references .unnumbered}
 
 ::: {#refs}
 :::

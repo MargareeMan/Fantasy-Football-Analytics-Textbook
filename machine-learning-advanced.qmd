@@ -1,0 +1,3 @@
+# Machine Learning: Advanced Approaches {#sec-machineLearningAdvanced}
+
+This chapter covers advanced machine learning approaches in the context of NFL analytics.

@@ -1,0 +1,3 @@
+# Prediction and Forecasting {#sec-predictionForecasting}
+
+This chapter covers prediction and forecasting methods applied to NFL data.

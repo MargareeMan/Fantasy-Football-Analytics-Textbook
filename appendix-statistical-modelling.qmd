@@ -1,0 +1,3 @@
+# Statistical Modelling {#sec-appendixStatisticalModelling .unnumbered}
+
+This appendix provides supplementary notes on statistical modelling concepts.

@@ -1,0 +1,51 @@
+# Weekly Performance by Stat Category {#sec-weeklyPerformance}
+
+This chapter covers weekly player performance across key statistical categories.
+
+## Passing {#sec-weeklyPassing}
+
+### Pass Attempts {#sec-weeklyPassAttempts}
+
+#### Completed Pass {#sec-weeklyCompletedPass}
+
+#### Incomplete Pass {#sec-weeklyIncompletePass}
+
+#### Interceptions {#sec-weeklyInterceptions}
+
+#### Pass TDs {#sec-weeklyPassTDs}
+
+### Pass Yardage {#sec-weeklyPassYardage}
+
+#### Air Yards {#sec-weeklyAirYards}
+
+#### Passing Yards {#sec-weeklyPassingYards}
+
+#### YAC {#sec-weeklyYAC}
+
+### Passing Metrics {#sec-weeklyPassingMetrics}
+
+#### CP {#sec-weeklyCP}
+
+#### CPOE {#sec-weeklyCPOE}
+
+### Passer Play {#sec-weeklyPasserPlay}
+
+#### Dropback {#sec-weeklyDropback}
+
+#### Hits {#sec-weeklyHits}
+
+#### Sacks {#sec-weeklySacks}
+
+#### Pass_oe {#sec-weeklyPassOE}
+
+#### xpass {#sec-weeklyXpass}
+
+## Rushing {#sec-weeklyRushing}
+
+## Receiving {#sec-weeklyReceiving}
+
+## Kicking {#sec-weeklyKicking}
+
+## Offensive Line Play {#sec-weeklyOLine}
+
+## Defensive Play {#sec-weeklyDefense}

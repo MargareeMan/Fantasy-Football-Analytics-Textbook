@@ -2,74 +2,74 @@ project:
   type: book
 
 book:
-  title: "Fantasy Football Analytics: Statistics, Prediction, and Empiricism Using R"
+  title: "NFL Football Analytics"
   subtitle: "Version 0.0.1"
-  author: "Isaac T. Petersen"
+  author: "Your Name"
   date: today
-  cover-image: images/bookCover.png
-  cover-image-alt: "Fantasy Football Analytics Book Cover"
   sharing: [twitter, facebook, linkedin]
-  #doi: ADD
-  #isbn: ADD
-  keyword: fantasy football, fantasy football analytics, data analysis, statistical analysis, statistics, R software, prediction, empiricism
   license: "CC BY"
   reader-mode: true
   page-footer:
     left: |
-      "Fantasy Football Analytics: Statistics, Prediction, and Empiricism Using R" was written by <a href="https://psychology.uiowa.edu/people/isaac-petersen">Isaac T. Petersen</a>.
+      "NFL Football Analytics" was written by <a href="#">Your Name</a>.
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
-  favicon: images/logo.png
-  twitter-card: true
-  open-graph: true
-  site-url: https://isaactpetersen.github.io/Fantasy-Football-Analytics-Textbook
-  repo-url: https://github.com/isaactpetersen/Fantasy-Football-Analytics-Textbook
+  repo-url: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
   repo-branch: main
   repo-actions: [edit, source, issue]
-  google-analytics: G-C3SNF7Y0PJ
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - fantasy-football.qmd
-    - getting-started.qmd
-    - download-football-data.qmd
-    - data-visualization.qmd
-    - player-evaluation.qmd
-    - draft.qmd
-    - research-methods.qmd
-    - basic-statistics.qmd
-    - correlation.qmd
-    - multiple-regression.qmd
-    - mixed-models.qmd
-    - causal-inference.qmd
-    - cognitive-bias.qmd
-    - actuarial.qmd
-    - base-rates.qmd
-    - evaluating-prediction-accuracy.qmd
-    - mythbusters.qmd
-    - machine-learning.qmd
-    - modern-portfolio-theory.qmd
-    - cluster-analysis.qmd
-    - factor-analysis.qmd
-    - pca.qmd
-    - simulation.qmd
-    - time-series-analysis.qmd
-    - decision-making.qmd
-    - sports-cognitive-psychology.qmd
+  parts:
+    - part: "Front Matter"
+      chapters:
+        - index.qmd
+        - preface.qmd
+        - intro.qmd
+    - part: "Base Performance Descriptive Statistics"
+      chapters:
+        - weekly-performance.qmd
+        - annual-performance.qmd
+        - team-weekly-performance.qmd
+        - team-season-statistics.qmd
+        - career-statistics.qmd
+    - part: "Modelling Play, Player, and Team Performance"
+      chapters:
+        - regression.qmd
+        - multiple-regression.qmd
+        - glm.qmd
+        - glmm.qmd
+    - part: "Advanced Modelling Approaches"
+      chapters:
+        - bayesian-hierarchical.qmd
+        - machine-learning-advanced.qmd
+        - pca.qmd
+        - cluster-analysis.qmd
+        - factor-analysis.qmd
+        - time-series.qmd
+    - part: "Machine Learning"
+      chapters:
+        - machine-learning.qmd
+    - part: "Causal Inference"
+      chapters:
+        - causal-inference.qmd
+    - part: "Prediction and Forecasting"
+      chapters:
+        - prediction-forecasting.qmd
+    - part: "Appendices"
+      chapters:
+        - appendix-github.qmd
+        - appendix-statistical-modelling.qmd
+        - appendix-nfl-analytics.qmd
+        - appendix-r-notes.qmd
     - references.qmd
 
 bibliography: [references.bib, packages.bib]
 csl: apa.csl
-nocite: |
-  @Corston2000
 
 format:
   html:
     highlight-style: a11y
     theme:
-      light: [cosmo, fonts/css/lora.css]
-      dark: [cosmo, fonts/css/lora.css, theme-dark.scss]
-    mainfont: Lora #gfonts::setup_font("lora", output_dir = "./fonts/"); gfonts::get_all_fonts()
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
     code-link: true
     number-sections: true
     code-fold: show
@@ -80,62 +80,9 @@ format:
       error: true
       message: false
       warning: false
-    keep-md: true
     link-external-newwindow: true
-    embed-resources: false
     anchor-sections: true
     df-print: paged
-    comments:
-      hypothesis:
-        theme: classic
-        openSidebar: false
-        showHighlights: whenSidebarOpen
-      giscus:
-        repo: isaactpetersen/Fantasy-Football-Analytics-Textbook
-        repo-id: R_kgDOL6_f_A
-        category: Chapter Comments
-        category-id: DIC_kwDOL6_f_M4Cnvl7
-        mapping: pathname
-        reactions-enabled: true
-        loading: lazy
-        input-position: top
-    #include-in-header:
-    #  - "includes/google_analytics.html"
-    include-before-body:
-      - "includes/open-review.html"
-    include-after-body:
-    #  - "includes/disqus.html"
-      - "includes/email_submit.html"
-    #  - "includes/footer.html"
-    license: CC BY
-    author-meta: "Isaac T. Petersen"
-    date-meta: today
-  pdf:
-    documentclass: krantz
-    classoption: krantz2
-    link-citations: true
-    colorlinks: true
-    keep-tex: true
-    lot: true
-    lof: true
-    include-in-header: latex/preamble.tex
-    include-before-body: latex/before_body.tex
-    include-after-body: latex/after_body.tex
-    execute:
-      error: true
-      message: false
-      warning: false
-    cite-method: biblatex
-    biblatexoptions:
-      - "backend=biber"
-      - "backref=true"
-      - "style=apa"
-      - "language=american"
-  epub:
-    execute:
-      error: true
-      message: false
-      warning: false
 
-lightbox: 
+lightbox:
   match: auto

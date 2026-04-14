@@ -1,0 +1,3 @@
+# Time-Series Models {#sec-timeSeries}
+
+This chapter covers time-series modelling approaches applied to NFL data.
