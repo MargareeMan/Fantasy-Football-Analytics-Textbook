@@ -21,19 +21,19 @@ library(vroom)
 library(cowplot)
 library(showtext)
 
-font_add(family = "Roboto", regular = "C:/Windows/Fonts/RobotoCondensed-Regular.ttf")
-font_import()  # scans and imports all system fonts — takes a minute or two
-loadfonts(device = "win")
-fonts()  # lists all fonts extrafont knows about
+# font_add(family = "Roboto", regular = "C:/Windows/Fonts/RobotoCondensed-Regular.ttf")
+# font_import()  # scans and imports all system fonts — takes a minute or two
+# loadfonts(device = "win")
+# fonts()  # lists all fonts extrafont knows about
 
-
+getwd()
 # load_participation(
 #   seasons = most_recent_season(TRUE),
 #   include_pbp = TRUE,
 #   file_type = getOption("nflreadr.prefer", default = "CSV")
 # )
 
-setwd("D:/R/Introduction to NFL Analytics with R")
+setwd("E:/NFL Stata Data/nflfast2026/Fantasy-Football-Analytics-Textbook")
 participation <- nflreadr::load_participation(2025, include_pbp = TRUE)
 # write_csv(participation,"participation_2022.csv")
 rosters <- nflreadr::load_rosters(2025) %>%
@@ -63,7 +63,8 @@ oline_participation <- oline_participation %>%
 
 oline_participation %>%
   group_by(offense_personnel) %>%
-  summarize(total = n())
+  summarize(total = n()) %>%
+  arrange(-total)
 
 oline_participation
 
