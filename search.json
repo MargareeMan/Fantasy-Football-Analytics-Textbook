@@ -1,0 +1,396 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NFL Football Analytics",
+    "section": "",
+    "text": "Welcome\nThis is the online version of NFL Football Analytics.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "This book is a personal project to explore NFL football analytics using R.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html",
+    "href": "weekly-performance.html",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "",
+    "text": "1.1 Passing\nThis chapter covers weekly player performance across key statistical categories.",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyPassing",
+    "href": "weekly-performance.html#sec-weeklyPassing",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "",
+    "text": "1.1.1 Pass Attempts\n\n1.1.1.1 Completed Pass\n\n\n1.1.1.2 Incomplete Pass\n\n\n1.1.1.3 Interceptions\n\n\n1.1.1.4 Pass TDs\n\n\n\n1.1.2 Pass Yardage\n\n1.1.2.1 Air Yards\n\n\n1.1.2.2 Passing Yards\n\n\n1.1.2.3 YAC\n\n\n\n1.1.3 Passing Metrics\n\n1.1.3.1 CP\n\n\n1.1.3.2 CPOE\n\n\n\n1.1.4 Passer Play\n\n1.1.4.1 Dropback\n\n\n1.1.4.2 Hits\n\n\n1.1.4.3 Sacks\n\n\n1.1.4.4 Pass_oe\n\n\n1.1.4.5 xpass",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyRushing",
+    "href": "weekly-performance.html#sec-weeklyRushing",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "1.2 Rushing",
+    "text": "1.2 Rushing",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyReceiving",
+    "href": "weekly-performance.html#sec-weeklyReceiving",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "1.3 Receiving",
+    "text": "1.3 Receiving",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyKicking",
+    "href": "weekly-performance.html#sec-weeklyKicking",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "1.4 Kicking",
+    "text": "1.4 Kicking",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyOLine",
+    "href": "weekly-performance.html#sec-weeklyOLine",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "1.5 Offensive Line Play",
+    "text": "1.5 Offensive Line Play",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "weekly-performance.html#sec-weeklyDefense",
+    "href": "weekly-performance.html#sec-weeklyDefense",
+    "title": "1  Weekly Performance by Stat Category",
+    "section": "1.6 Defensive Play",
+    "text": "1.6 Defensive Play",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Weekly Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html",
+    "href": "annual-performance.html",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "",
+    "text": "2.1 Passing\nThis chapter covers annual player performance across key statistical categories.",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualPassing",
+    "href": "annual-performance.html#sec-annualPassing",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "",
+    "text": "2.1.1 Pass Attempts\n\n2.1.1.1 Completed Pass\n\n\n2.1.1.2 Incomplete Pass\n\n\n2.1.1.3 Interceptions\n\n\n2.1.1.4 Pass TDs\n\n\n\n2.1.2 Pass Yardage\n\n2.1.2.1 Air Yards\n\n\n2.1.2.2 Passing Yards\n\n\n2.1.2.3 YAC\n\n\n\n2.1.3 Passing Metrics\n\n2.1.3.1 CP\n\n\n2.1.3.2 CPOE\n\n\n\n2.1.4 Passer Play\n\n2.1.4.1 Dropback\n\n\n2.1.4.2 Hits\n\n\n2.1.4.3 Sacks\n\n\n2.1.4.4 Pass_oe\n\n\n2.1.4.5 xpass",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualRushing",
+    "href": "annual-performance.html#sec-annualRushing",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "2.2 Rushing",
+    "text": "2.2 Rushing",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualReceiving",
+    "href": "annual-performance.html#sec-annualReceiving",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "2.3 Receiving",
+    "text": "2.3 Receiving",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualKicking",
+    "href": "annual-performance.html#sec-annualKicking",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "2.4 Kicking",
+    "text": "2.4 Kicking",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualOLine",
+    "href": "annual-performance.html#sec-annualOLine",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "2.5 Offensive Line Play",
+    "text": "2.5 Offensive Line Play",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "annual-performance.html#sec-annualDefense",
+    "href": "annual-performance.html#sec-annualDefense",
+    "title": "2  Annual Performance by Stat Category",
+    "section": "2.6 Defensive Play",
+    "text": "2.6 Defensive Play",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Annual Performance by Stat Category</span>"
+    ]
+  },
+  {
+    "objectID": "team-weekly-performance.html",
+    "href": "team-weekly-performance.html",
+    "title": "3  Team Weekly Performance",
+    "section": "",
+    "text": "This chapter covers team-level weekly performance statistics.",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Team Weekly Performance</span>"
+    ]
+  },
+  {
+    "objectID": "team-season-statistics.html",
+    "href": "team-season-statistics.html",
+    "title": "4  Team Regular Season Statistics",
+    "section": "",
+    "text": "This chapter covers team-level regular season statistics.",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Team Regular Season Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "career-statistics.html",
+    "href": "career-statistics.html",
+    "title": "5  Career-Based Statistics",
+    "section": "",
+    "text": "This chapter covers career-level player statistics.",
+    "crumbs": [
+      "Base Performance Descriptive Statistics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Career-Based Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "regression.html",
+    "href": "regression.html",
+    "title": "6  Regression",
+    "section": "",
+    "text": "This chapter introduces simple linear regression in the context of NFL analytics.",
+    "crumbs": [
+      "Modelling Play, Player, and Team Performance",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression</span>"
+    ]
+  },
+  {
+    "objectID": "multiple-regression.html",
+    "href": "multiple-regression.html",
+    "title": "7  Multiple Regression",
+    "section": "",
+    "text": "This chapter covers multiple regression models applied to NFL data.",
+    "crumbs": [
+      "Modelling Play, Player, and Team Performance",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Multiple Regression</span>"
+    ]
+  },
+  {
+    "objectID": "glm.html",
+    "href": "glm.html",
+    "title": "8  Generalized Linear Models",
+    "section": "",
+    "text": "This chapter covers generalized linear models (GLMs) applied to NFL data.",
+    "crumbs": [
+      "Modelling Play, Player, and Team Performance",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Generalized Linear Models</span>"
+    ]
+  },
+  {
+    "objectID": "glmm.html",
+    "href": "glmm.html",
+    "title": "9  Generalized Linear Mixed Models",
+    "section": "",
+    "text": "This chapter covers generalized linear mixed models (GLMMs) applied to NFL data.",
+    "crumbs": [
+      "Modelling Play, Player, and Team Performance",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Generalized Linear Mixed Models</span>"
+    ]
+  },
+  {
+    "objectID": "bayesian-hierarchical.html",
+    "href": "bayesian-hierarchical.html",
+    "title": "10  Bayesian Statistics and Hierarchical Models",
+    "section": "",
+    "text": "This chapter introduces Bayesian statistical methods and hierarchical models.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Bayesian Statistics and Hierarchical Models</span>"
+    ]
+  },
+  {
+    "objectID": "machine-learning-advanced.html",
+    "href": "machine-learning-advanced.html",
+    "title": "11  Machine Learning: Advanced Approaches",
+    "section": "",
+    "text": "This chapter covers advanced machine learning approaches in the context of NFL analytics.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Machine Learning: Advanced Approaches</span>"
+    ]
+  },
+  {
+    "objectID": "pca.html",
+    "href": "pca.html",
+    "title": "12  PCA: Dimensionality Reduction",
+    "section": "",
+    "text": "This chapter covers Principal Component Analysis (PCA) as a dimensionality reduction technique.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>PCA: Dimensionality Reduction</span>"
+    ]
+  },
+  {
+    "objectID": "cluster-analysis.html",
+    "href": "cluster-analysis.html",
+    "title": "13  Cluster Analysis: Interpretable Proximity",
+    "section": "",
+    "text": "This chapter covers cluster analysis methods applied to NFL data.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cluster Analysis: Interpretable Proximity</span>"
+    ]
+  },
+  {
+    "objectID": "factor-analysis.html",
+    "href": "factor-analysis.html",
+    "title": "14  Factor Analysis: Interpretable Latent Variable Identification",
+    "section": "",
+    "text": "This chapter covers factor analysis applied to NFL data.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Factor Analysis: Interpretable Latent Variable Identification</span>"
+    ]
+  },
+  {
+    "objectID": "time-series.html",
+    "href": "time-series.html",
+    "title": "15  Time-Series Models",
+    "section": "",
+    "text": "This chapter covers time-series modelling approaches applied to NFL data.",
+    "crumbs": [
+      "Advanced Modelling Approaches",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Time-Series Models</span>"
+    ]
+  },
+  {
+    "objectID": "machine-learning.html",
+    "href": "machine-learning.html",
+    "title": "16  Machine Learning",
+    "section": "",
+    "text": "This chapter provides a comprehensive treatment of machine learning methods for NFL analytics.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Machine Learning</span>"
+    ]
+  },
+  {
+    "objectID": "causal-inference.html",
+    "href": "causal-inference.html",
+    "title": "17  Causal Inference",
+    "section": "",
+    "text": "This chapter covers causal inference methods in the context of NFL analytics.",
+    "crumbs": [
+      "Causal Inference",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Causal Inference</span>"
+    ]
+  },
+  {
+    "objectID": "prediction-forecasting.html",
+    "href": "prediction-forecasting.html",
+    "title": "18  Prediction and Forecasting",
+    "section": "",
+    "text": "This chapter covers prediction and forecasting methods applied to NFL data.",
+    "crumbs": [
+      "Prediction and Forecasting",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Prediction and Forecasting</span>"
+    ]
+  },
+  {
+    "objectID": "appendix-github.html",
+    "href": "appendix-github.html",
+    "title": "GitHub, Git Pages, and Version Control",
+    "section": "",
+    "text": "This appendix covers the use of GitHub, GitHub Pages, and version control for reproducible research.",
+    "crumbs": [
+      "Appendices",
+      "GitHub, Git Pages, and Version Control"
+    ]
+  },
+  {
+    "objectID": "appendix-statistical-modelling.html",
+    "href": "appendix-statistical-modelling.html",
+    "title": "Statistical Modelling",
+    "section": "",
+    "text": "This appendix provides supplementary notes on statistical modelling concepts.",
+    "crumbs": [
+      "Appendices",
+      "Statistical Modelling"
+    ]
+  },
+  {
+    "objectID": "appendix-nfl-analytics.html",
+    "href": "appendix-nfl-analytics.html",
+    "title": "NFL Analytics Notes",
+    "section": "",
+    "text": "This appendix contains supplementary notes on NFL analytics concepts and data sources.",
+    "crumbs": [
+      "Appendices",
+      "NFL Analytics Notes"
+    ]
+  },
+  {
+    "objectID": "appendix-r-notes.html",
+    "href": "appendix-r-notes.html",
+    "title": "R Notes",
+    "section": "",
+    "text": "This appendix provides supplementary notes on R programming relevant to the book.",
+    "crumbs": [
+      "Appendices",
+      "R Notes"
+    ]
+  }
+]
