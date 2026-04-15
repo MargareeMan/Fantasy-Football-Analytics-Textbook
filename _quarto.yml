@@ -4,7 +4,7 @@ project:
 book:
   title: "NFL Football Analytics"
   subtitle: "Version 0.0.1"
-  author: "Your Name"
+  author: "George Ellis"
   date: today
   sharing: [twitter, facebook, linkedin]
   license: "CC BY"
