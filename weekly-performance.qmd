@@ -45,7 +45,7 @@ This chapter covers weekly player performance across key statistical categories.
 This is some text about rushing performance.
 
 ```{r}
-setwd("D:/R/Fantasy Football Analytics/Fantasy-Football-Analytics-Textbook/data")
+setwd("E:/NFL Stata Data/nflfast2026//Fantasy-Football-Analytics-Textbook/data")
 load("player_stats_weekly.RData")
 
 library(tidyverse)
@@ -67,14 +67,22 @@ result <- player_stats_weekly %>%
 print(result)
 ```
 
-```{sql}
--- SQL code here
+
+```{r}
+library(DBI)
+library(RSQLite)
+con <- dbConnect(RSQLite::SQLite(), dbname = "E:/NFL Stata Data/nflfast2026/database_25.db")
+```
+
+```{sql, connection=con}
 SELECT player_id, player_name, team, SUM(rushing_tds) AS tds, SUM(rushing_yards) AS yards
-FROM player_stats_weekly
+FROM main.nfl_actualStats_player_weekly
 WHERE player_id = '00-0038134' AND
       season = 2025 AND
-      position = 'RB'
+      season_type = 'REG' AND
+      position = 'RB';
 ```
+
 
 ## Receiving {#sec-weeklyReceiving}
 
