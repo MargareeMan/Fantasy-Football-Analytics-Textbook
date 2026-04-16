@@ -84,6 +84,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-b4ee44b146bbc185583840e8f92ded9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-691972b0eefe947e5cb643aa546e3e31.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-b4ee44b146bbc185583840e8f92ded9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -706,86 +709,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">setwd</span>(<span class="st">"E:/NFL Stata Data/nflfast2026//Fantasy-Football-Analytics-Textbook/data"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `setwd()`:
-! cannot change working directory</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">load</span>(<span class="st">"player_stats_weekly.RData"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `readChar()`:
-! cannot open the connection</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `library()`:
-! there is no package called 'tidyverse'</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">library</span>(nflverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `library()`:
-! there is no package called 'nflverse'</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>result <span class="ot">&lt;-</span> player_stats_weekly <span class="sc">%&gt;%</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">filter</span>(</span>
-<span id="cb9-3"><a href="#cb9-3"></a>    player_id <span class="sc">==</span> <span class="st">"00-0038134"</span>,</span>
-<span id="cb9-4"><a href="#cb9-4"></a>    season <span class="sc">==</span> <span class="dv">2025</span>,</span>
-<span id="cb9-5"><a href="#cb9-5"></a>    position <span class="sc">==</span> <span class="st">"RB"</span></span>
-<span id="cb9-6"><a href="#cb9-6"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb9-8"><a href="#cb9-8"></a>    <span class="at">player_id   =</span> <span class="fu">first</span>(player_id),</span>
-<span id="cb9-9"><a href="#cb9-9"></a>    <span class="at">player_name =</span> <span class="fu">first</span>(player_name),</span>
-<span id="cb9-10"><a href="#cb9-10"></a>    <span class="at">team        =</span> <span class="fu">first</span>(team),</span>
-<span id="cb9-11"><a href="#cb9-11"></a>    <span class="at">tds         =</span> <span class="fu">sum</span>(rushing_tds, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb9-12"><a href="#cb9-12"></a>    <span class="at">yards       =</span> <span class="fu">sum</span>(rushing_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb9-13"><a href="#cb9-13"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `player_stats_weekly %&gt;% filter(player_id == "00-0038134", season == 2025,
-  position == "RB") %&gt;% summarise(player_id = first(player_id), player_name = first(
-    player_name), team = first(team), tds = sum(rushing_tds, na.rm = TRUE),
-  yards = sum(rushing_yards, na.rm = TRUE))`:
-! could not find function "%&gt;%"</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">print</span>(result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'result' not found</code></pre>
-</div>
-</div>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">library</span>(DBI)</span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">library</span>(RSQLite)</span>
-<span id="cb13-3"><a href="#cb13-3"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="at">dbname =</span> <span class="st">"E:/NFL Stata Data/nflfast2026/database_25.db"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>result <span class="ot">&lt;-</span> player_stats_weekly <span class="sc">%&gt;%</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">filter</span>(</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    player_id <span class="sc">==</span> <span class="st">"00-0038134"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    season <span class="sc">==</span> <span class="dv">2025</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    position <span class="sc">==</span> <span class="st">"RB"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="at">player_id   =</span> <span class="fu">first</span>(player_id),</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="at">player_name =</span> <span class="fu">first</span>(player_name),</span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="at">team        =</span> <span class="fu">first</span>(team),</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="at">tds         =</span> <span class="fu">sum</span>(rushing_tds, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="at">yards       =</span> <span class="fu">sum</span>(rushing_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  )</span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="fu">print</span>(result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">SELECT</span> player_id, player_name, team, <span class="fu">SUM</span>(rushing_tds) <span class="kw">AS</span> tds, <span class="fu">SUM</span>(rushing_yards) <span class="kw">AS</span> yards</span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="kw">FROM</span> main.nfl_actualStats_player_weekly</span>
-<span id="cb14-3"><a href="#cb14-3"></a><span class="kw">WHERE</span> player_id <span class="op">=</span> <span class="st">'00-0038134'</span> <span class="kw">AND</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>      season <span class="op">=</span> <span class="dv">2025</span> <span class="kw">AND</span></span>
-<span id="cb14-5"><a href="#cb14-5"></a>      season_type <span class="op">=</span> <span class="st">'REG'</span> <span class="kw">AND</span></span>
-<span id="cb14-6"><a href="#cb14-6"></a>      position <span class="op">=</span> <span class="st">'RB'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(DBI)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">library</span>(RSQLite)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="at">dbname =</span> <span class="st">"E:/NFL Stata Data/nflfast2026/database_25.db"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">SELECT</span> player_id, player_name, team, <span class="fu">SUM</span>(rushing_tds) <span class="kw">AS</span> tds, <span class="fu">SUM</span>(rushing_yards) <span class="kw">AS</span> yards</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">FROM</span> main.nfl_actualStats_player_weekly</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">WHERE</span> player_id <span class="op">=</span> <span class="st">'00-0038134'</span> <span class="kw">AND</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>      season <span class="op">=</span> <span class="dv">2025</span> <span class="kw">AND</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>      season_type <span class="op">=</span> <span class="st">'REG'</span> <span class="kw">AND</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>      position <span class="op">=</span> <span class="st">'RB'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/bradcongelio_pass.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Test Inage"><img src="images/bradcongelio_pass.png" class="img-fluid figure-img" alt="Test Inage"></a></p>
+<figcaption>Test Inage</figcaption>
+</figure>
 </div>
 </section>
 <section id="sec-weeklyReceiving" class="level2" data-number="1.3">
@@ -1248,6 +1211,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
