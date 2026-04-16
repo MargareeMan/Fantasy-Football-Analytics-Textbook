@@ -69,12 +69,15 @@ print(result)
 
 
 ```{r}
+#| eval: false
 library(DBI)
 library(RSQLite)
 con <- dbConnect(RSQLite::SQLite(), dbname = "E:/NFL Stata Data/nflfast2026/database_25.db")
 ```
 
-```{sql, connection=con}
+```{sql}
+#| eval: false
+#| connection: con
 SELECT player_id, player_name, team, SUM(rushing_tds) AS tds, SUM(rushing_yards) AS yards
 FROM main.nfl_actualStats_player_weekly
 WHERE player_id = '00-0038134' AND
