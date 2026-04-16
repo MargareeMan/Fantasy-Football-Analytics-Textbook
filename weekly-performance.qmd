@@ -45,12 +45,7 @@ This chapter covers weekly player performance across key statistical categories.
 This is some text about rushing performance.
 
 ```{r}
-setwd("E:/NFL Stata Data/nflfast2026//Fantasy-Football-Analytics-Textbook/data")
-load("player_stats_weekly.RData")
-
-library(tidyverse)
-library(nflverse)
-
+#| eval: false
 result <- player_stats_weekly %>%
   filter(
     player_id == "00-0038134",
@@ -86,6 +81,7 @@ WHERE player_id = '00-0038134' AND
       position = 'RB';
 ```
 
+![Test Inage](images/bradcongelio_pass.png)
 
 ## Receiving {#sec-weeklyReceiving}
 
